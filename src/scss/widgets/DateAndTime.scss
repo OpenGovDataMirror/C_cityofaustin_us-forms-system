@@ -1,0 +1,90 @@
+/* Import Material Icons */
+// eslint-disable-next-line no-url-protocols
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/* Fix bug when rendering on OPO form */
+.usa-form-group-year-fix {
+  margin-top: 0px !important;
+}
+
+.date-fieldset {
+  display: inline-block;
+  width: auto;
+  position: relative;
+}
+
+.flatpickr-container {
+  /* Adjust position to account for not having a label*/
+  position: absolute;
+  bottom: 0px;
+  display: inline-block;
+}
+
+.hidden-flatpickr-input-box {
+  width: 0px;
+  padding: 0 0;
+  border: none !important; /* uswds adds borders to add buttons on error */
+  display: inline;
+  font-size: 0em;
+  height: 0px;
+  /* the following settings are to prevent zooming on mobile browsers */
+  font-size: 16px;
+  position: absolute !important;
+}
+
+.hidden-flatpickr-input-box:focus {
+  outline: none !important; /* override .usa-focus:focus styling */
+}
+
+.flatpickr-input-button-container {
+  border: none !important; /* uswds adds borders to add buttons on error */
+}
+
+$input-button-color: #0050d8;
+
+.flatpickr-input-button {
+  cursor: pointer;
+  color: $input-button-color;
+  font-size: 2.25em;
+}
+
+.emoji {
+  font-size: 2em;
+}
+
+/* Replicate ".usa-date-of-birth label" styling rule */
+.time-widget-container label {
+  margin-top: 0px;
+}
+
+.time-widget-container {
+  position: relative;
+}
+
+.time-period-select-container {
+  /* Adjust position to account for not having a label*/
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  width: 4.5em;
+}
+
+/* Hide HTML5 Up and Down arrows. */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* Make "input-date-label" label smaller than main Date/Time label */
+.smaller-input {
+  font-size: 1.6rem;
+}
+
+/* For labels only required by a screenreader. */
+.hidden-content {
+  display: none;
+}
